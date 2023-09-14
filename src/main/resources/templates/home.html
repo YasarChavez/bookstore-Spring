@@ -9,7 +9,7 @@
     </head>
     <body>
         <!-- Navbar desde fragments -->
-        <div th:replace="fragments/topbar :: navbar"></div>
+        <div th:replace="~{fragments/topbar :: navbar}"></div>
         <!--  -->
         <div class="container text-center my-5">
             <h1>WELCOME TO NEW BOOK STORE</h1>
@@ -26,6 +26,9 @@
             <!-- https://www.pngegg.com -->
             <img src="images/StudentCartoon.png" alt="childrens" width="360px">
         </div>
+        <!-- Footer desde fragments -->
+        <div th:replace="~{fragments/footer.html :: footer}"></div>
+        <!--  -->
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
