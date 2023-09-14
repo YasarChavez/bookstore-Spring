@@ -1,0 +1,24 @@
+.centrado {
+    margin: 0 auto;
+    width: 50%; /* Puedes ajustar el ancho según tus necesidades */
+    text-align: center; /* Para centrar el contenido dentro del div */
+}
+body {
+    background-color: #f2f2f2;
+}
+#botonMenuMovil {
+    background-color: #f2f2f2;
+}
+#botonGuardarLibro {
+    background-color: rgb(201, 201, 201);
+    border: #f2f2f2;
+    color: #3a3a3a;
+}
+#botonGuardarLibro:hover {
+    border: solid 1px #3a3a3a;
+}
+#formRegistrarLibro{
+    border: 1px solid #3a3a3a;
+    border-radius: 25px;
+}
+

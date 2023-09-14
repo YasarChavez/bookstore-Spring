@@ -1,0 +1,10 @@
+com\bookstore\bookstore\controller\TestController.class
+com\bookstore\bookstore\entity\Book.class
+com\bookstore\bookstore\entity\MyBookList.class
+com\bookstore\bookstore\repository\BookRepository.class
+com\bookstore\bookstore\service\BookService.class
+com\bookstore\bookstore\service\MyBookListService.class
+com\bookstore\bookstore\repository\MyBookRepository.class
+com\bookstore\bookstore\controller\BookController.class
+com\bookstore\bookstore\BookstoreApplication.class
+com\bookstore\bookstore\controller\MyBookListController.class

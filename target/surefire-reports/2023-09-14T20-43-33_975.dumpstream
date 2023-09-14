@@ -1,0 +1,5 @@
+# Created at 2023-09-14T20:43:34.284
+Boot Manifest-JAR contains absolute paths in classpath 'd:\Visual Studio Code - Proyectos\Book Store\bookstore\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

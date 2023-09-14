@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book Store</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+        <link th:href="@{/styles/estilos.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navbar desde fragments -->
+        <div th:replace="~{fragments/topbar :: navbar}"></div>
+        <!--  -->
+        <!-- Listar Libros -->
+        <div class="container my-5 col-md-6">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="b : ${book}">
+                        <td th:text="${b.id}"></td>
+                        <td th:text="${b.name}"></td>
+                        <td th:text="${b.author}"></td>
+                        <td th:text="${b.price}"></td>
+                        <td>
+                            <a class="btn btn-success btn-sm" th:href="@{/mylist/{id}(id=${b.id})}">📚</a>
+                            <a class="btn btn-info btn-sm" th:href="@{/editBook/{id}(id=${b.id})}">🖊</a>
+                            <a class="btn btn-danger btn-sm" th:href="@{/deleteBook/{id}(id=${b.id})}">🗑</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Footer desde fragments -->
+        <div th:replace="~{fragments/footer.html :: footer}"></div>
+        <!--  -->
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
