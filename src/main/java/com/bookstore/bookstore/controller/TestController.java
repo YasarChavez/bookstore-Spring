@@ -19,7 +19,6 @@ public class TestController {
     public String test() {
         try {
             String sql = "SELECT * FROM BOOK";
-            
             return jdbcTemplate.queryForList(sql).toString();
         } catch (Exception e) {
             return "fail " + e.getMessage();
